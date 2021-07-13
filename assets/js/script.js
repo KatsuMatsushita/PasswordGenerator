@@ -41,10 +41,10 @@ function generatePassword(){
 
   if (passwordLength < 8 || passwordLength > 128) {
     window.alert("Please enter a number between 8 and 128");
-    return;
+    return result;
   } else if (Number.isNaN(passwordLength)){
     window.alert("A number must be entered");
-    return;
+    return result;
   };
   // check to see how randomInteger works, remember to remove later
   // console.log(randomInteger(8, passwordLength));
@@ -88,7 +88,7 @@ function generatePassword(){
 
   if (criteria === 0){
     window.alert("At least 1 password criteria must be selected")
-    return;
+    return result;
   };
 
   // this adds the guaranteed characters to the final password
